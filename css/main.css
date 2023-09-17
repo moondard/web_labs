@@ -9,9 +9,26 @@ h1{
 h3{
     margin: 0;
 }
+.full-name{
+    text-shadow: 1px 1px 0 #5a5a5a, 
+      2px 2px 0 #5a5a5a,
+      3px 3px 0 #5a5a5a,
+      4px 4px 0 #000000,
+      5px 5px 0 #000000;
+}
 .my_img{
     transition: 1s;
 }
 .my_img:hover{
     transform: rotate(180deg);
+}
+.prog_img{
+    opacity: 0;
+    animation: prog_img_anim 2s 2s forwards;
+}
+@keyframes prog_img_anim {
+    0% {opacity: 0;
+    transform: translateY(150%);}
+    100% {opacity: 1;
+    transform: translateY(0);}
 }
